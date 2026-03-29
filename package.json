@@ -4,11 +4,17 @@
   "description": "UI5 Hello World App",
   "scripts": {
     "start": "ui5 serve -o test/mockServer.html",
+    "test": "ui5 serve -o test/testsuite.qunit.html",
     "build": "ui5 build"
   },
   "devDependencies": {
+    "@types/openui5": "^1.145.0",
     "@ui5/cli": "^4.0.0",
-    "ui5-middleware-simpleproxy": "^3.7.0"
+    "@ui5/ts-interface-generator": "^0.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2",
+    "ui5-middleware-simpleproxy": "^3.7.0",
+    "ui5-tooling-transpile": "^3.11.0"
   },
   "ui5": {
     "dependencies": [

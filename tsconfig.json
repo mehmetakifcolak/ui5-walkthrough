@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "ui5/walkthrough/*": ["webapp/*"]
+    },
+    "types": ["@types/openui5"]
+  },
+  "include": ["webapp/**/*.ts"]
+}
