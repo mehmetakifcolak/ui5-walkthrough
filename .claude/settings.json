@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/mymac/.nvm/versions/**)",
+      "Bash(command -v npm)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//Users/mymac/**)",
+      "Bash(curl -s http://localhost:8080/view/InvoiceList.view.xml)",
+      "Bash(curl -s http://localhost:8080/controller/InvoiceList.controller.js)",
+      "Bash(find /Users/mymac/fioriui5/webapp -type f \\\\\\( -name \"*.js\" -o -name \"*.xml\" -o -name \"*.json\" -o -name \"*.html\" -o -name \"*.properties\" \\\\\\) -exec sed -i '' 's/fioriui5\\\\.helloworld/ui5.walkthrough/g; s/fioriui5\\\\/helloworld/ui5\\\\/walkthrough/g' {} +)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}

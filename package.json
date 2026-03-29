@@ -1,0 +1,19 @@
+{
+  "name": "fioriui5-helloworld",
+  "version": "1.0.0",
+  "description": "UI5 Hello World App",
+  "scripts": {
+    "start": "ui5 serve",
+    "build": "ui5 build"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^4.0.0"
+  },
+  "ui5": {
+    "dependencies": [
+      "@openui5/sap.ui.core",
+      "@openui5/sap.m",
+      "@openui5/themelib_sap_horizon"
+    ]
+  }
+}
