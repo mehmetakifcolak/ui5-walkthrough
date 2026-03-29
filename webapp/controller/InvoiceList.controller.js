@@ -10,9 +10,6 @@ sap.ui.define([
 		onInit() {
 			const oViewModel = new JSONModel({ currency: "EUR" });
 			this.getView().setModel(oViewModel, "view");
-
-			const oInvoiceModel = new JSONModel("./Invoices.json");
-			this.getView().setModel(oInvoiceModel, "invoice");
 		},
 		onFilterInvoices(oEvent) {
 			// build filter array

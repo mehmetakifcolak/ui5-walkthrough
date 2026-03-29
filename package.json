@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "UI5 Hello World App",
   "scripts": {
-    "start": "ui5 serve",
+    "start": "ui5 serve -o test/mockServer.html",
     "build": "ui5 build"
   },
   "devDependencies": {
-    "@ui5/cli": "^4.0.0"
+    "@ui5/cli": "^4.0.0",
+    "ui5-middleware-simpleproxy": "^3.7.0"
   },
   "ui5": {
     "dependencies": [
