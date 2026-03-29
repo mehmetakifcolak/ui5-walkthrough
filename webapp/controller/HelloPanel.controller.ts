@@ -3,6 +3,7 @@ import MessageToast from "sap/m/MessageToast";
 import JSONModel from "sap/ui/model/json/JSONModel";
 import ResourceBundle from "sap/base/i18n/ResourceBundle";
 import ResourceModel from "sap/ui/model/resource/ResourceModel";
+import Dialog from "sap/m/Dialog";
 
 /**
  * @namespace ui5.walkthrough.controller
@@ -26,8 +27,7 @@ export default class HelloPanel extends Controller {
     const oDialog = await this.loadFragment({
       name: "ui5.walkthrough.view.HelloDialog"
     });
-    (oDialog as sap.ui.core.Control).setVisible(true);
-    (oDialog as unknown as { open(): void }).open();
+    (oDialog as Dialog).open();
   }
 
   public onCloseDialog(): void {
